@@ -9,7 +9,7 @@ export class PageHome {
     return [
       <ion-header>
         <ion-toolbar color="primary">
-          <ion-title>Home</ion-title>
+          <ion-title>Home1</ion-title>
         </ion-toolbar>
       </ion-header>,
 
