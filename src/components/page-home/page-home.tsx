@@ -9,7 +9,10 @@ export class PageHome {
     return [
       <ion-header>
         <ion-toolbar color="primary">
-          <ion-title>Home1</ion-title>
+          <ion-title>チャットアプリ</ion-title>
+          <ion-buttons slot="end">
+            <auth-button></auth-button>
+          </ion-buttons>
         </ion-toolbar>
       </ion-header>,
 

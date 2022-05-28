@@ -23,7 +23,7 @@ export class TabsPage {
 
         <ion-tab-bar slot="bottom">
           <ion-tab-button tab="tab-home">
-            <ion-icon name="home" />
+          <ion-icon name="accessibility-outline"></ion-icon>
             <ion-label>ホーム</ion-label>
           </ion-tab-button>
           <ion-tab-button tab="tab-message">
