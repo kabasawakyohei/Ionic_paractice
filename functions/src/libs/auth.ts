@@ -1,5 +1,5 @@
-export const addUser = async(db:any, user:any) => {
-  try{
+export const addUser = async (db: any, user: any) => {
+  try {
     const now = new Date(user.metadata.creationTime);
     await db.collection('users').doc(user.id).set({
       name: user.displayName,
@@ -7,8 +7,8 @@ export const addUser = async(db:any, user:any) => {
       createdAt: now,
       updatedAt: now,
     });
-  } catch(e){
+  } catch (e) {
     console.error(e);
   }
   return;
-}
+};

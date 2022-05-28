@@ -2,7 +2,7 @@ import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'page-tabs',
-  styleUrl: 'page-tabs.scss'
+  styleUrl: 'page-tabs.scss',
 })
 export class TabsPage {
   render() {
@@ -23,7 +23,7 @@ export class TabsPage {
 
         <ion-tab-bar slot="bottom">
           <ion-tab-button tab="tab-home">
-          <ion-icon name="accessibility-outline"></ion-icon>
+            <ion-icon name="accessibility-outline"></ion-icon>
             <ion-label>ホーム</ion-label>
           </ion-tab-button>
           <ion-tab-button tab="tab-message">
@@ -39,7 +39,7 @@ export class TabsPage {
             <ion-label>設定</ion-label>
           </ion-tab-button>
         </ion-tab-bar>
-      </ion-tabs>
+      </ion-tabs>,
     ];
   }
 }

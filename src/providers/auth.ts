@@ -1,4 +1,4 @@
-import { authenticateGoogle, isAuth } from "../helpers/firebase";
+import { authenticateGoogle, isAuth } from '../helpers/firebase';
 
 export class AuthController {
   // TODO 型宣言を的確に行う
@@ -11,10 +11,10 @@ export class AuthController {
   }
 
   async loggedin() {
-    if (this.loginUser){
+    if (this.loginUser) {
       // すでにログインしていればログインユーザーを返却する
-      return this.loginUser
-    }else{
+      return this.loginUser;
+    } else {
       // ログインユーザーでなければログイン中か判定しログインユーザーがnullを返却する
       this.loginUser = await isAuth();
       return this.loginUser;
